@@ -52,7 +52,6 @@ class Main
         add_action('wp_enqueue_scripts', [$this, 'plugin_assets']);
         add_filter('woocommerce_payment_gateways', [$this, 'woocommercePaymentGateways']);
         add_action('init', array($this, 'add_endpoints'), 10);
-        add_action('save_post', array($this, 'invoicebox_extra_fields_update'), 0);
     }
 
     public function woocommercePaymentGateways($gateways)
