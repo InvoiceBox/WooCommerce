@@ -255,6 +255,8 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'productTypeField' => array(
                 'title'       => __('Мета-поле, где задан тип для отдельного товара', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'measure' => array(
@@ -266,6 +268,8 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'measureField' => array(
                 'title'       => __('Мета-поле, где задана единица измерения для отдельного товара', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'measureCode' => array(
@@ -277,6 +281,8 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'measureCodeField' => array(
                 'title'       => __('Мета-поле, где задан код единицы измерения для отдельного товара', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'originCountry' => array(
@@ -288,6 +294,8 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'originCountryField' => array(
                 'title'       => __('Мета-поле, где задана страна-производитель товара', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'originCountryCode' => array(
@@ -298,6 +306,8 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'originCountryCodeField' => array(
                 'title'       => __('Мета-поле, где задан код страны-производителя товара', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
 
@@ -305,107 +315,145 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
             'metaField' => array(
                 'title'       => __('Мета-поле, где заданы в json-формате мета-данные элемента заказа', 'invoicebox'),
                 'type'        => 'text',
+                'description' => __('Подробности заполнения мета-полей можно посмотреть в инструкции', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_id_v2' => array(
-                'title' => __('Id магазина', 'invoicebox'),
+                'title' => __('Идентификатор магазина', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Идентификатор магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_id_v3' => array(
-                'title' => __('Id магазина', 'invoicebox'),
+                'title' => __('Идентификатор магазина', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Идентификатор магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_id_v2_test' => array(
-                'title' => __('Id магазина (тест)', 'invoicebox'),
+                'title' => __('Идентификатор магазина (тест)', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Идентификатор магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_id_v3_test' => array(
-                'title' => __('Id магазина (тест)', 'invoicebox'),
+                'title' => __('Идентификатор магазина (тест)', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Идентификатор магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_code_v2' => array(
-                'title' => __('Код магазина', 'invoicebox'),
+                'title' => __('Региональный код магазина', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Региональный код магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_code_v3' => array(
-                'title' => __('Код магазина', 'invoicebox'),
+                'title' => __('Региональный код магазина', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Региональный код магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_code_v2_test' => array(
-                'title' => __('Код магазина (тест)', 'invoicebox'),
+                'title' => __('Региональный код магазина (тест)', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Региональный код магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'shop_code_v3_test' => array(
-                'title' => __('Код магазина (тест)', 'invoicebox'),
+                'title' => __('Региональный код магазина (тест)', 'invoicebox'),
                 'type'  => 'text',
+                'description' => __('Региональный код магазина находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'user_v2' => array(
-                'title'   => __('Логин', 'invoicebox'),
+                'title'   => __('Имя пользователя API', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '',
+                'description' => __('Имя пользователя направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'token_v3' => array(
                 'title'   => __('Токен', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '',
+                'description' => __('Токен находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'user_v2_test' => array(
-                'title'   => __('Логин', 'invoicebox'),
+                'title'   => __('Имя пользователя API', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '',
+                'description' => __('Имя пользователя направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'token_v3_test' => array(
                 'title'   => __('Токен (тест)', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '',
+                'description' => __('Токен находится в личном кабинете платежной системы Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'password_v2' => array(
-                'title'   => __('Пароль', 'invoicebox'),
+                'title'   => __('Пароль API', 'invoicebox'),
                 'type'    => 'password',
                 'default' => '',
+                'description' => __('Пароль API направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'password_v2_test' => array(
-                'title'   => __('Пароль', 'invoicebox'),
+                'title'   => __('Пароль API (тест)', 'invoicebox'),
                 'type'    => 'password',
                 'default' => '',
+                'description' => __('Пароль API направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'key_v2' => array(
-                'title'   => __('Ключ', 'invoicebox'),
+                'title'   => __('API Ключ', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '5',
+                'description' => __('API Ключ направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'key_v2_test' => array(
-                'title'   => __('Ключ', 'invoicebox'),
+                'title'   => __('API Ключ (тест)', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '5',
+                'description' => __('API Ключ направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'key_v3' => array(
-                'title'   => __('Ключ', 'invoicebox'),
+                'title'   => __('API Ключ', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '5',
+                'description' => __('API Ключ направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
 
             'key_v3_test' => array(
-                'title'   => __('Ключ', 'invoicebox'),
+                'title'   => __('API Ключ (тест)', 'invoicebox'),
                 'type'    => 'text',
                 'default' => '5',
+                'description' => __('API Ключ направляется по почте при регистрации в платежной системе Invoicebox', 'invoicebox'),
+                'desc_tip'    => true,
             ),
 
             'logging' => array(
@@ -437,9 +485,9 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
         try{
             if(empty($this->IB)) $this->IB = new \Invoicebox\Invoicebox($this->apiVersion, $this->invoiceboxSettings->access_config, $this->invoiceboxSettings->test_env, $this->invoiceboxSettings->test_mode);
         }
-       catch (\Exception $e){
-           $this->errorMail($e->getMessage());
-       }
+        catch (\Exception $e){
+            $this->errorMail($e->getMessage());
+        }
         return $this->IB;
     }
 
@@ -473,7 +521,7 @@ abstract class WC_Invoicebox_Abstract_Gateway extends \WC_Payment_Gateway {
 
     public function push_callback()
     {
-       $this->helper->push_callback();
+        $this->helper->push_callback();
     }
 
     protected function lets_log($data, $prefix=false)
